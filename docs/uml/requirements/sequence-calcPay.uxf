@@ -1,0 +1,216 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;690&lt;/x&gt;&lt;y&gt;250&lt;/y&gt;&lt;w&gt;210&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;690&lt;/x&gt;&lt;y&gt;330&lt;/y&gt;&lt;w&gt;210&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentRSDAYS&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;260&lt;/x&gt;&lt;y&gt;410&lt;/y&gt;&lt;w&gt;670&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=.&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;650;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;331&lt;/x&gt;&lt;y&gt;366&lt;/y&gt;&lt;w&gt;290&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;&amp;lt;-
+payment+=paymentRSDAYS(month,year)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;50;30;50;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;340&lt;/y&gt;&lt;w&gt;380&lt;/w&gt;&lt;h&gt;40&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;&amp;lt;-
+paymentRSDAYS(month,year)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;360;20;10;20&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;321&lt;/x&gt;&lt;y&gt;286&lt;/y&gt;&lt;w&gt;440&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;&amp;lt;-
+payment += paymentForPaidByHour(month,year, agreement.size())&lt;/panel_attributes&gt;&lt;additional_attributes&gt;30;30;60;30;60;10;19;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;260&lt;/y&gt;&lt;w&gt;380&lt;/w&gt;&lt;h&gt;40&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;&amp;lt;&amp;lt;-
+paymentForPaidByHour(month,year, agreement.size())&lt;/panel_attributes&gt;&lt;additional_attributes&gt;360;20;10;20&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;270&lt;/x&gt;&lt;y&gt;240&lt;/y&gt;&lt;w&gt;640&lt;/w&gt;&lt;h&gt;380&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;alt
+--
+[]
+
+
+
+
+
+
+
+
+
+
+[else]&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;260&lt;/x&gt;&lt;y&gt;750&lt;/y&gt;&lt;w&gt;510&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;263&lt;/x&gt;&lt;y&gt;818&lt;/y&gt;&lt;w&gt;510&lt;/w&gt;&lt;h&gt;270&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;alt
+--
+[paidByHour(agreement.size()-1)]
+
+
+
+
+
+
+
+-.
+[else]&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;272&lt;/x&gt;&lt;y&gt;862&lt;/y&gt;&lt;w&gt;470&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;272&lt;/x&gt;&lt;y&gt;992&lt;/y&gt;&lt;w&gt;470&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByMonth&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;922&lt;/y&gt;&lt;w&gt;440&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByHour(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;1042&lt;/y&gt;&lt;w&gt;450&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByMonth(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;260&lt;/x&gt;&lt;y&gt;750&lt;/y&gt;&lt;w&gt;510&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;263&lt;/x&gt;&lt;y&gt;818&lt;/y&gt;&lt;w&gt;510&lt;/w&gt;&lt;h&gt;270&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;alt
+--
+[paidByHour(agreement.size()-1)]
+
+
+
+
+
+
+
+-.
+[else]&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;272&lt;/x&gt;&lt;y&gt;862&lt;/y&gt;&lt;w&gt;470&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;272&lt;/x&gt;&lt;y&gt;992&lt;/y&gt;&lt;w&gt;470&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByMonth&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;922&lt;/y&gt;&lt;w&gt;440&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByHour(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;330&lt;/x&gt;&lt;y&gt;1042&lt;/y&gt;&lt;w&gt;450&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByMonth(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;318&lt;/x&gt;&lt;y&gt;296&lt;/y&gt;&lt;w&gt;490&lt;/w&gt;&lt;h&gt;270&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;alt
+--
+[paidByHour(agreement.size()-1)]
+
+
+
+
+
+
+
+-.
+[else]&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;327&lt;/x&gt;&lt;y&gt;340&lt;/y&gt;&lt;w&gt;460&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;368&lt;/x&gt;&lt;y&gt;396&lt;/y&gt;&lt;w&gt;440&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByHour(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;327&lt;/x&gt;&lt;y&gt;470&lt;/y&gt;&lt;w&gt;460&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByMonth&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;358&lt;/x&gt;&lt;y&gt;516&lt;/y&gt;&lt;w&gt;460&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByMonth(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;30;30;70;30;70;10;19;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;350&lt;/x&gt;&lt;y&gt;326&lt;/y&gt;&lt;w&gt;440&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByHour(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;309&lt;/x&gt;&lt;y&gt;270&lt;/y&gt;&lt;w&gt;400&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByHour&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;309&lt;/x&gt;&lt;y&gt;400&lt;/y&gt;&lt;w&gt;400&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;ref
+--
+paymentForPaidByMonth&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;UMLFrame&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;300&lt;/x&gt;&lt;y&gt;226&lt;/y&gt;&lt;w&gt;490&lt;/w&gt;&lt;h&gt;270&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;alt
+--
+[paidByHour(agreement.size()-1)]
+
+
+
+
+
+
+
+-.
+[else]&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;350&lt;/x&gt;&lt;y&gt;446&lt;/y&gt;&lt;w&gt;450&lt;/w&gt;&lt;h&gt;50&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=&amp;lt;-
+payment = paymentForPaidByMonth(month,year, agreement.size()-2)&lt;/panel_attributes&gt;&lt;additional_attributes&gt;20;30;60;30;60;10;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;UMLGeneric&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;390&lt;/x&gt;&lt;y&gt;120&lt;/y&gt;&lt;w&gt;230&lt;/w&gt;&lt;h&gt;30&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;_:EmployeeManagementController_&lt;/panel_attributes&gt;&lt;additional_attributes&gt;&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>292</x><y>30</y><w>100</w><h>30</h></coordinates><panel_attributes>_:Employee_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>332</x><y>50</y><w>30</w><h>1780</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1760</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>332</x><y>110</y><w>20</w><h>1670</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>120</y><w>260</w><h>50</h></coordinates><panel_attributes>ref
+--
+thisAgreementStartedBeforethisMonth</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>252</x><y>240</y><w>710</w><h>1510</h></coordinates><panel_attributes>alt
+--
+[thisAgreementStartedBeforethisMonth(month,year) or (!thisAgreementEndedBeforeNextMonth(month,year))]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[else]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>12</x><y>30</y><w>230</w><h>30</h></coordinates><panel_attributes>_:EmployeeManagementController_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>113</x><y>86</y><w>20</w><h>1710</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>113</x><y>46</y><w>30</w><h>1790</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1770</additional_attributes></element><element><id>Relation</id><coordinates><x>123</x><y>106</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+calcPay(int month , int year)</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>466</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment+=paymentRSDAYS(month,year)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>486</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>350</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentForPaidByHour</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>130</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+thisAgreementStartedBeforethisMonth(month,year)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>190</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+thisAgreementEndedBeforeNextMonth(month,year)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>180</y><w>260</w><h>50</h></coordinates><panel_attributes>ref
+--
+thisAgreementEndedBeforeNextMonth</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>360</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentForPaidByHour(month,year, agreement.size())</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>440</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentRSDAYS(month,year)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>430</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentRSDAYS</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>386</y><w>440</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment += paymentForPaidByHour(month,year, agreement.size())</panel_attributes><additional_attributes>30;30;60;30;60;10;19;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>406</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>282</x><y>300</y><w>640</w><h>420</h></coordinates><panel_attributes>alt
+--
+[paidByHour(agreement.size())]
+
+
+
+
+
+
+
+
+
+
+
+
+[else]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>272</x><y>510</y><w>670</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;650;10</additional_attributes></element><element><id>Relation</id><coordinates><x>341</x><y>560</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentForPaidByMonth(month,year, agreement.size())</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>701</x><y>550</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentForPaidByMonth</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>666</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment+=paymentRSDAYS(month,year)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>341</x><y>640</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentRSDAYS(month,year)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>701</x><y>630</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentRSDAYS</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>606</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>686</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>242</x><y>726</y><w>740</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;720;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>810</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentForPaidByHour</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>702</x><y>890</y><w>210</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentRSDAYS</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>272</x><y>970</y><w>670</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;650;10</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>926</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment+=paymentRSDAYS(month,year)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>900</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentRSDAYS(month,year)</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>846</y><w>440</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment += paymentForPaidByHour(month,year, agreement.size())</panel_attributes><additional_attributes>30;30;60;30;60;10;19;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>820</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentForPaidByHour(month,year, agreement.size())</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>282</x><y>770</y><w>640</w><h>970</h></coordinates><panel_attributes>alt
+--
+[paidByHour(agreement.size())]
+
+
+
+
+
+
+
+
+
+
+
+[else]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>866</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>946</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>602</x><y>1010</y><w>100</w><h>30</h></coordinates><panel_attributes>_:Agreement_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>642</x><y>1030</y><w>30</w><h>280</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;260</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>642</x><y>1070</y><w>20</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>802</x><y>1010</y><w>100</w><h>30</h></coordinates><panel_attributes>_:LocalDate_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>842</x><y>1030</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>842</x><y>1120</y><w>20</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1060</y><w>320</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getStartDate()</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1080</y><w>320</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1110</y><w>520</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getDayOfMonth()</panel_attributes><additional_attributes>500;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1130</y><w>520</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;20;500;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1186</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1166</y><w>420</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+datestart=this.getLastAgreement().getStartDate().getDayOfMonth()</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>842</x><y>1180</y><w>20</w><h>20</h></coordinates><panel_attributes>type=termination</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1220</y><w>320</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getAgrType()</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>642</x><y>1230</y><w>20</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1036</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1016</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getLastAgreement()</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1240</y><w>320</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>742</x><y>1250</y><w>140</w><h>30</h></coordinates><panel_attributes>_:AgreementType_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>802</x><y>1273</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>802</x><y>1303</y><w>20</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1290</y><w>480</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+getSalary()</panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1310</y><w>480</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;20;460;20</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>802</x><y>1350</y><w>20</w><h>20</h></coordinates><panel_attributes>type=termination</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1390</y><w>420</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+daysOfWorkThisMonth(month,year,agreement.size())</panel_attributes><additional_attributes>400;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>742</x><y>1380</y><w>170</w><h>50</h></coordinates><panel_attributes>ref
+--
+daysOfWorkThisMonth</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1446</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1426</y><w>430</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment +=((float)this.getLastAgreement().getAgrType().getSalary()/
+(float)25)*daysOfWorkThisMonth(month,year,agreement.size())</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1488</y><w>420</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+totalRestDays(month,year)</panel_attributes><additional_attributes>400;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>742</x><y>1478</y><w>170</w><h>50</h></coordinates><panel_attributes>ref
+--
+totalRestDays</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1526</y><w>400</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment += payment+= totalRestDays(month,year)*
+((float)getLastAgreement().getAgrType().getSalary()/(float)25)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1546</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1578</y><w>420</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentForSickDays(month, year)</panel_attributes><additional_attributes>400;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>742</x><y>1568</y><w>170</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentForSickDays</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1616</y><w>310</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment-=paymentForSickDays(month, year)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1636</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>1658</y><w>420</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+paymentForPaidByMonth(month,year, agreement.size(),false)</panel_attributes><additional_attributes>400;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>742</x><y>1648</y><w>170</w><h>50</h></coordinates><panel_attributes>ref
+--
+paymentForPaidByMonth</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1686</y><w>460</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment+=paymentForPaidByMonth(month,year, agreement.size(),false)</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>343</x><y>1706</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>122</x><y>1750</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+payment
+</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>0</x><y>0</y><w>980</w><h>1820</h></coordinates><panel_attributes>sd: calcPay</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>642</x><y>1280</y><w>20</w><h>20</h></coordinates><panel_attributes>type=termination</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>586</y><w>430</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+payment += paymentForPaidByHour(month,year, agreement.size())</panel_attributes><additional_attributes>20;30;50;30;50;10;10;10</additional_attributes></element></diagram>

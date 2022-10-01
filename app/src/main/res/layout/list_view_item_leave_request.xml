@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design for Leave Request -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_Name"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="61dp"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_EndDate"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listItem_LeaveRequest_Type_label"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp" />
+
+    <TextView
+        android:id="@+id/leaveRequest_from"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/listItem_LeaveRequest_Type_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-67dp"
+        android:layout_toStartOf="@+id/listItem_LeaveRequest_Name"
+        android:text="@string/from" />
+
+    <TextView
+        android:id="@+id/leaveRequest_to"
+        android:layout_width="56dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/listItem_LeaveRequest_Type_label"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/to" />
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_StartDate"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listItem_LeaveRequest_Type_label"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="174dp" />
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_Type"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="110dp" />
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_Type_label"
+        android:layout_width="175dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="152dp"
+        android:text="@string/leave_request_type" />
+
+    <TextView
+        android:id="@+id/listItem_LeaveRequest_id"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignStart="@+id/listItem_LeaveRequest_Name"
+        android:layout_alignEnd="@+id/listItem_LeaveRequest_Name"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp" />
+
+</RelativeLayout>

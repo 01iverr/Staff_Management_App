@@ -1,0 +1,57 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>702</x><y>320</y><w>190</w><h>160</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+WorkerDAO
+--
++removeAll()
++delete(entity: Worker)
++findAll(): List&lt;Worker&gt;
++save(entity: Worker)
++find(id: Long): Worker
++nextId(): Long
++departmentNextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>140</y><w>320</w><h>170</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AgreementDAO
+--
++removeAll()
++delete(agreement: Agreement)
++findAll(): List&lt;Agreement&gt;
++findAllFor(worker: Worker): List&lt;Agreement&gt;
++save(agreement: Agreement, worker: Worker)
++find(id: Long): Agreement
++nextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>402</x><y>140</y><w>280</w><h>140</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AgreementTypeDAO
+--
++removeAll()
++delete(entity: AgreementType)
++findAll(): List&lt;AgreementType&gt;
++save(entity: AgreementType)
++find(id: Long): AgreementType
++nextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>692</x><y>140</y><w>320</w><h>160</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AttendanceDAO
+--
++removeAll()
++delete(attendance: Attendance)
++findAll(): List&lt;Attendance&gt;
++findAllFor(worker: Worker): List&lt;Attendance&gt;
++save(attendance: Attendance, worker: Worker)
++find(id: Long): Attendance
++nextId(): Long
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>402</x><y>320</y><w>280</w><h>180</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AcceptedLeavesDAO
+--
++removeAll()
++delete(leave: Leave)
++findAll(): List&lt;Leave&gt;
++findAllFor(worker: Worker): List&lt;Leave&gt;
++save(leave: Leave, worker: Worker)
++find(id: Long): Leave
++size(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>320</y><w>320</w><h>200</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+LeaveRequestDAO
+--
++removeAll()
++delete(leave: Leave)
++findAll(): List&lt;Leave&gt;
++findAllFor(worker: Worker): List&lt;Leave&gt;
++findAllFor(department: String): List&lt;Leave&gt;
++findWorkerFor(leaveRequest: Leave): Worker
++save(leave: Leave, worker: Worker)
++find(id: Long): Leave
++size(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>62</x><y>30</y><w>970</w><h>540</h></coordinates><panel_attributes>Interfaces</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1042</x><y>30</y><w>620</w><h>540</h></coordinates><panel_attributes>memoryDAO</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1452</x><y>150</y><w>190</w><h>30</h></coordinates><panel_attributes>AgreementDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1242</x><y>150</y><w>200</w><h>30</h></coordinates><panel_attributes>AgreementTypeDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1052</x><y>150</y><w>180</w><h>30</h></coordinates><panel_attributes>AttendanceDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1462</x><y>440</y><w>190</w><h>30</h></coordinates><panel_attributes>LeaveRequestDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1252</x><y>440</y><w>200</w><h>30</h></coordinates><panel_attributes>AcceptedLeavesDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1062</x><y>440</y><w>180</w><h>30</h></coordinates><panel_attributes>WorkerDAOMemory</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>838</x><y>100</y><w>320</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;40;10;10;300;10;300;50</additional_attributes></element><element><id>Relation</id><coordinates><x>532</x><y>80</y><w>840</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;10;10;820;10;820;70</additional_attributes></element><element><id>Relation</id><coordinates><x>222</x><y>60</y><w>1340</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;80;10;10;1320;10;1320;90</additional_attributes></element><element><id>Relation</id><coordinates><x>778</x><y>460</y><w>400</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;20;10;50;380;50;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>460</y><w>850</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;40;10;70;830;70;830;10</additional_attributes></element><element><id>Relation</id><coordinates><x>188</x><y>460</y><w>1390</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;60;10;90;1370;90;1370;10</additional_attributes></element></diagram>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textCreateAgrType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_agreement_type"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypeSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberAgrTypeSal"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypeName"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberAgrTypeSal" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/agreement_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextAgrTypeName"
+        app:layout_constraintStart_toStartOf="@+id/textCreateAgrType"
+        app:layout_constraintTop_toTopOf="@+id/editTextAgrTypeName" />
+
+    <Switch
+        android:id="@+id/switchAgrTypeFT"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberAgrTypeSick"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberAgrTypeSick"
+        tools:ignore="DuplicateSpeakableTextCheck,UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchAgrTypePT"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/switchAgrTypeFT"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/switchAgrTypeFT"
+        app:layout_constraintTop_toBottomOf="@+id/switchAgrTypeFT"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchAgrTypePBS"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/switchAgrTypePT"
+        app:layout_constraintStart_toStartOf="@+id/switchAgrTypePT"
+        app:layout_constraintTop_toBottomOf="@+id/switchAgrTypePT"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchAgrTypePBW"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/switchAgrTypePBS"
+        app:layout_constraintStart_toStartOf="@+id/switchAgrTypePBS"
+        app:layout_constraintTop_toBottomOf="@+id/switchAgrTypePBS"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/editTextAgrTypeName"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="@string/agrTypename"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="@+id/textCreateAgrType"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateAgrType"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextNumberAgrTypeSal"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:hint="@string/_100_00"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAgrTypeName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextAgrTypeName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAgrTypeName"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewAgrRestD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rest_days"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberAgrTypeRest"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypeSalary"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberAgrTypeRest" />
+
+    <TextView
+        android:id="@+id/textViewAgrSickD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sick_days"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberAgrTypeSick"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrRestD"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberAgrTypeSick" />
+
+    <EditText
+        android:id="@+id/editTextNumberAgrTypeRest"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="@string/_10"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberAgrTypeSal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberAgrTypeSal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberAgrTypeSal"
+        tools:ignore="DuplicateSpeakableTextCheck,LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextNumberAgrTypeSick"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:hint="@string/_10"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        android:textColor="@color/design_default_color_secondary"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberAgrTypeRest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberAgrTypeRest"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberAgrTypeRest"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypeFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgrTypeFT"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrSickD"
+        app:layout_constraintTop_toTopOf="@+id/switchAgrTypeFT" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypePT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/part_time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgrTypePT"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypeFT"
+        app:layout_constraintTop_toTopOf="@+id/switchAgrTypePT" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypePBS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paid_by_salary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgrTypePBS"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypePT"
+        app:layout_constraintTop_toTopOf="@+id/switchAgrTypePBS" />
+
+    <TextView
+        android:id="@+id/textViewAgrTypePBW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paid_by_wage"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgrTypePBW"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypePBS"
+        app:layout_constraintTop_toTopOf="@+id/switchAgrTypePBW" />
+
+    <Button
+        android:id="@+id/buttoncreateAgrType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="564dp"
+        android:text="@string/create"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAgrTypePBW"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateAgrType" />
+
+    <Button
+        android:id="@+id/buttoncancelAgrType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberAgrTypeSick"
+        app:layout_constraintTop_toBottomOf="@+id/textCreateAgrType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

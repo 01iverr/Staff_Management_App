@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gr.aueb.sweng22.team05">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="team05"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Team05.Midnight">
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.HomePage.HomePageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.addWorker.AddWorkerActivity"
+            android:exported="true">
+            </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.EditWorker.EditWorkerActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.addAgreement.AddAgreementActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.addAgreementType.AddAgreementTypeActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.search_worker_by_afm.SearchWorkerByAfmActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.ShowLeaveRequests.ShowLeaveRequestsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.HandleLeaveRequest.HandleLeaveRequestActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.FirstPageEmployee.FirstPageEmployeeAcivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.FirstPageManager.FirstPageManagerActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.ShowPayments.ShowPaymentsActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.hrPage.HrPageActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name="gr.aueb.sweng22.team05.view.LeaveRequest.LeaveRequestActivity"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>

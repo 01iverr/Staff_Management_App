@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#E91E63">
+
+    <TextView
+        android:id="@+id/textSDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/single_day_request"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textMDR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/textLeaveRequest"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <TextView
+        android:id="@+id/textMDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/multiple_days_request"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textLRFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest" />
+
+    <TextView
+        android:id="@+id/textLeaveRequest"
+        android:layout_width="313dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/leave_request"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchSDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textSDR"
+        app:layout_constraintEnd_toEndOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toTopOf="@+id/textSDR"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchMDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textMDR"
+        app:layout_constraintEnd_toEndOf="@+id/switchSDR"
+        app:layout_constraintStart_toStartOf="@+id/switchSDR"
+        app:layout_constraintTop_toTopOf="@+id/textMDR"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textLRSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sick_day_s"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textMDR"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/textLRtype"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textLRRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rest_day_s"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textLRSD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textLRSD"
+        app:layout_constraintTop_toBottomOf="@+id/textLRSD"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Switch
+        android:id="@+id/switchLRSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textLRSD"
+        app:layout_constraintEnd_toEndOf="@+id/switchMDR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/switchMDR"
+        app:layout_constraintTop_toTopOf="@+id/textLRSD"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switchLRRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textLRRD"
+        app:layout_constraintEnd_toEndOf="@+id/switchLRSD"
+        app:layout_constraintStart_toStartOf="@+id/switchLRSD"
+        app:layout_constraintTop_toTopOf="@+id/textLRRD"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textLRFD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/first_day"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textLeaveRequest"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/textLeaveRequest" />
+
+    <EditText
+        android:id="@+id/inputLRFD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="16/06/2022"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textLRFD"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textLRFD"
+        app:layout_constraintTop_toBottomOf="@+id/textLRFD"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textlrld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/last_day"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textLRFD"
+        app:layout_constraintStart_toStartOf="@+id/textLRFD"
+        app:layout_constraintTop_toBottomOf="@+id/inputLRFD" />
+
+    <EditText
+        android:id="@+id/inputLRLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="18/06/2022"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textlrld"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textlrld"
+        app:layout_constraintTop_toBottomOf="@+id/textlrld"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/warningtextLR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/please_have_in_mind_that_you_can_request_only_days_within_the_same_month_in_every_request_and_only_working_days_in_a_row"
+        android:textColor="@color/confirmation_green"
+        app:layout_constraintBottom_toTopOf="@+id/textLRtype"
+        app:layout_constraintEnd_toEndOf="@+id/inputLRLD"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/inputLRLD"
+        app:layout_constraintTop_toBottomOf="@+id/inputLRLD"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textLRtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_leave_request"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textLeaveRequest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/inputLRLD"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <Button
+        android:id="@+id/buttonLRCONTINUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="568dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/continuelr"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLRCANCEL"
+        app:layout_constraintEnd_toEndOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/textLeaveRequest"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonLRCANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/cancellr"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLRCONTINUE"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textLeaveRequest"
+        app:layout_constraintTop_toBottomOf="@+id/textLeaveRequest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

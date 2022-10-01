@@ -1,0 +1,93 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>190</y><w>330</w><h>440</h></coordinates><panel_attributes>AddWorkerActivity
+--
+~agreementDAO: AgreementDAOMemory
+~workerDAO: WorkerDAOMemory
+--
+-getValues() {query}
++getFirstName(): String {query}
++getLastName(): String {query}
++getPhone(): Long {query}
++getEmail(): String {query}
++getAFM(): String {query}
++getDepartment(): String {query}
++getManagerEmployee(): String {query}
++getAgreement(): Agreement {query}
+
+-setValues()
++setFirstName(value: String)
++setLastName(value: String)
++setPhone(value: Long)
++setEmail(value: String)
++setAFM(value: String)
++setDepartment(value: String)
++setWorkerType(value: String)
+
++onCreate(savedInstanceState: Bundle)
+-onAddAgreement()
++successfullyFinishedActivitty(message: String)
++showErrorMessage(title: String, message: String)
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>190</y><w>410</w><h>150</h></coordinates><panel_attributes>AddWorkerPresenter
+--
+
+--
++onSaveWorker()
+#checkInput(): Boolean
+-validateEmail(email: String): Boolean
+-generateID(len: int): Long
+-generatePassword(passlen: int): String
+-setDepartmentValue(departmentName: String): Department
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>220</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+~presenter
+m1=1</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>440</y><w>340</w><h>330</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AddWorkerView
+--
++getFirstName(): String
++getLastName(): String
++getPhone(): Long
++getEmail(): String
++getAFM(): String
++getDepartment(): String
++getManagerEmployee(): String
++getAgreement(): Agreement 
++setFirstName(value: String)
++setLastName(value: String)
++setPhone(value: Long)
++setEmail(value: String)
++setAFM(value: String)
++setDepartment(value: String)
++setWorkerType(value: String)
++successfullyFinishedActivitty(message: String)
++showErrorMessage(title: String, message: String)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>320</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>440</y><w>190</w><h>160</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+WorkerDAO
+--
++removeAll()
++delete(entity: Worker)
++findAll(): List&lt;Worker&gt;
++save(entity: Worker)
++find(id: Long): Worker
++nextId(): Long
++departmentNextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>330</y><w>130</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-workers
+m1=1</panel_attributes><additional_attributes>110;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>67</x><y>710</y><w>180</w><h>40</h></coordinates><panel_attributes>&lt;&lt;layout&gt;&gt;
+activity_add_worker.xml</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>147</x><y>620</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;inflates&gt;&gt;</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>330</y><w>150</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+-view
+m1=1</panel_attributes><additional_attributes>10;110;130;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>240</y><w>110</w><h>30</h></coordinates><panel_attributes>Manager</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>240</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>200</y><w>110</w><h>30</h></coordinates><panel_attributes>Employee</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>280</y><w>110</w><h>30</h></coordinates><panel_attributes>Agreement</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>270</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>200</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;10;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>320</y><w>110</w><h>30</h></coordinates><panel_attributes>Department</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>300</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>90;30;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>918</x><y>430</y><w>330</w><h>170</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AgreementDAO
+--
++removeAll()
++delete(agreement: Agreement)
++findAll(): List&lt;Agreement&gt;
++findAllFor(worker: Worker): List&lt;Agreement&gt;
++save(agreement: Agreement, worker: Worker)
++find(id: Long): Agreement
++nextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>330</y><w>290</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+-agreements
+m1=1</panel_attributes><additional_attributes>270;100;10;10</additional_attributes></element></diagram>

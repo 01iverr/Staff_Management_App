@@ -1,0 +1,50 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>30</x><y>150</y><w>330</w><h>150</h></coordinates><panel_attributes>HomePageActivity
+--
+-username: EditText
+-password: EditText
+-loginButton: Button
+--
++onCreate(savedInstanceState: Bundle)
++showErrorMessage(title: String, message: String)
++getthepasswd(): String {query}
++gettheinputUsername(): String  {query}
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>140</y><w>260</w><h>160</h></coordinates><panel_attributes>HomePagePresenter
+--
+
+--
++checkedusername(): Boolean
++checkedpassword(): Boolean
+#checkingCredentials(): String
+#EmployeeOrManager(i: int): String
+#partofHr(): Boolean
+#thisworkerhasid(): Long
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>190</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+~hppresenter
+m1=1</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>380</y><w>340</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+HomePageView
+--
++getthepasswd(): String
++gettheinputUsername(): String
++showErrorMessage(title: String, message: String)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>250</y><w>110</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>380</y><w>190</w><h>160</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+WorkerDAO
+--
++removeAll()
++delete(entity: Worker)
++findAll(): List&lt;Worker&gt;
++save(entity: Worker)
++find(id: Long): Worker
++nextId(): Long
++departmentNextId(): Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>290</y><w>70</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-workers
+m1=1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>410</y><w>180</w><h>40</h></coordinates><panel_attributes>&lt;&lt;layout&gt;&gt;
+activity_main.xml</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>197</x><y>290</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;inflates&gt;&gt;</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>290</y><w>170</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+-view
+m1=1</panel_attributes><additional_attributes>10;90;150;10</additional_attributes></element></diagram>

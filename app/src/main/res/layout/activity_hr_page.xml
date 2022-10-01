@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editWorker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitleHR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hr"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/crEdDelWorker"
+        android:layout_width="401dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/create_edit_delete_worker"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitleHR"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitleHR"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleHR" />
+
+    <Button
+        android:id="@+id/calcPayments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/calculate_payments"
+        app:layout_constraintEnd_toEndOf="@+id/crEdDelWorker"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/crEdDelWorker"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberYear" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/moth"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberMonth"
+        app:layout_constraintStart_toStartOf="@+id/crEdDelWorker"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberMonth" />
+
+    <EditText
+        android:id="@+id/editTextNumberMonth"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/_10"
+        android:inputType="number"
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crEdDelWorker"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberYear"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberYear" />
+
+    <EditText
+        android:id="@+id/editTextNumberYear"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/_2022"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberMonth"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="@+id/calcPayments"
+        app:layout_constraintStart_toStartOf="@+id/calcPayments"
+        app:layout_constraintTop_toBottomOf="@+id/calcPayments" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

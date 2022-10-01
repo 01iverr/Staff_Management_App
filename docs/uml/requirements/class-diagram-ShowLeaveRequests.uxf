@@ -1,0 +1,39 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>30</x><y>150</y><w>330</w><h>420</h></coordinates><panel_attributes>ShowLeaveRequestsActivity
+--
++LEAVE_REQUEST_ID: String
++MANAGER_DEPARTMENT: String
+~customAdapter: CustomAdapter
+~leaveRequestList: ListView
+~leaveRequestDAO: LeaveRequestDAO
+~allLeaveRequestId: List&lt;String&gt; 
+~allLeaveRequestType: List&lt;String&gt; 
+~allWorkerName: : List&lt;String&gt; 
+~allLeaveRequestStart: List&lt;LocalDate&gt;
+~ allLeaveRequestEnd: List&lt;LocalDate&gt;
+--
+-getManagerDepartment(): String
++getID(): String
++getType(): String
++getName(): String
++getStartDate(): String
++getEndDate(): String
+
++setLeaveRequestID(value: String)
+
++onCreate(savedInstanceState: Bundle)
+-fillLists()
+-onSelectedLeave()
++successfullyFinishedActivitty(message: String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>150</y><w>340</w><h>180</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ShowLeaveRequestsView
+--
++getID(): String
++getType(): String
++getName(): String
++getStartDate(): String
++getEndDate(): String
++setLeaveRequestID(value: String)
++successfullyFinishedActivitty(message: String)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>230</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>537</x><y>440</y><w>260</w><h>40</h></coordinates><panel_attributes>&lt;&lt;layout&gt;&gt;
+activity_show_leave_requests.xml</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>347</x><y>440</y><w>210</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;inflates&gt;&gt;</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element></diagram>

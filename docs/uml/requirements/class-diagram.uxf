@@ -1,0 +1,187 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram note</help_text><element><id>UMLClass</id><coordinates><x>230</x><y>890</y><w>260</w><h>340</h></coordinates><panel_attributes>Agreement
+--
+-id: long
+-hireDate: LocalDate
+-startDate: LocalDate
+-endDate: LocalDate
+-active: Boolean
+--
++getId(): long {query}
++getHiredate(): LocalDate {query}
++getStartDate(): LocalDate {query}
++getEndDate(): Localdate {query}
++getAgrType(): AgreementType {query}
++getActive() : Boolean {query}
++setId(id:Long)
++setHireDate(hireDate:LocalDate)
++setAgrType(agr_type:AgreementType)
++setStartDate(startDate:LocalDate)
++setEndDate(endDate:LocalDate)
++setActive(actv:Boolean)
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>410</y><w>260</w><h>400</h></coordinates><panel_attributes>AgreementType
+--
+_-numofId: Integer = 0_
+-id: Long
+-name: String
+-salary: Float
+-restDays:Integer
+-sickdays: Integer
+--
++getId(): Long {query}
++getName: String {query}
++getSalary(): Float {query}
++getRestDays(): Integer {query}
++getSickDays(): Integer {query}
++getAgrType(): typeOfAgr {query}
++getEmType(): emplType {query}
++setId(id:Long)
++setName(name:String)
++setSalary(salary:Float)
++setRestDays(restDays:Integer)
++setSickDays(sickDays:Integer)
++setAgrType(agrType:typeOfAgr)
++setEmType(emType:emplType)
++getTypehours(): Integer {query}
++toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>600</y><w>110</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+leaveType
+--
+REST
+SICK</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>530</y><w>130</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+emplType
+--
+PAIDBYSALARY
+PAIDBYWAGE</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>430</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-agrType</panel_attributes><additional_attributes>18;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>540</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-emType</panel_attributes><additional_attributes>18;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>362</x><y>800</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-agrType</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1210</x><y>210</y><w>210</w><h>240</h></coordinates><panel_attributes>Attendance
+--
+-id: long
+-date: LocalDate
+-arival: LocalTime
+-leave: LocalTime
+--
++getId(): Long {query}
++getDate(): LocalDate {query}
++getArrival(): LocalTime {query}
++getLeave(): LocalTime {query}
++setId(id:Long)
++setDate(date:LocalDate)
++setArrival(arrival:LocalTime)
++setLeave(leave:LocalTime)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>20</y><w>490</w><h>320</h></coordinates><panel_attributes>HumanResources
+--
+
+--
++getWorkerList(): ArrayList&lt;Worker&gt; {query}
++getDepartmentList(): ArrayList&lt;Department&gt;  {query}
++getAgreementTypeList(): ArrayList&lt;AgreementType&gt;  {query}
++createWorker(type:String, name:String, lastname:String, email:String, 
+  phone:Long, afm:String, department:Department, agreement:Agreement)
+-generateID(len:Integer): long
+-generatePassword(len:Integer): String
++editWorker(afm:String, field:String, value:Object)
++deleteWorker(afm:String)
++createDepartment(id:Long, name:String)
++deleteDepartment(id:Long): Boolean
++createAgreement(ID:Long, h_date:LocalDate, s_Date:LocalDate, 
+  e_Date:LocalDate, agreement:AgreementType, act:Boolean): Agreement
++createAgreementType(id:Long, agrName:String, sal:Float, tOA:typeOfAgr, 
+  eT:emplType, restD:Integer, sickD:Integer)
++calculatePay(month:Integer, year:Integer): HashMap&lt;Worker,Float&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1170</x><y>770</y><w>210</w><h>250</h></coordinates><panel_attributes>Leave
+--
+-id: long
+-start: LocalDate
+-end: LocalDate
+--
++getId(): Long {query}
++getStart(): LocalDate {query}
++getEnd(): LocalDate {query}
++getType(): leaveType {query}
++setId(id:Long)
++setStart(start:LocalDate)
++setEnd(end:LocalDate)
++setType(type:leaveType)
++toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>420</y><w>130</w><h>80</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
+typeOfAgr
+--
+PARTTIME
+FULLTIME</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1242</x><y>680</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-type</panel_attributes><additional_attributes>20;10;18;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>290</y><w>500</w><h>910</h></coordinates><panel_attributes>Worker
+--
+#id: Long
+#firstName: String
+#lastName: String
+#email: String
+#phoneNumber: Long
+#AFM: String
+#username: String
+#password: String
+#departmenr: Depatment
+--
++getId(): Long {query}
++getFirstName(): String {query}
++getLastName(): String {query}
++getEmail(): String {query}
++getPhoneNumber(): Long {query}
++getAFM(): String {query}
++getUsername(): String {query}
++getPassword(): String {query}
++getDeparment(): String {query}
+
++setId(id:Long)
++setFirstName(firstName:String)
++setLastName(lastName:String)
++setEmail(email:String)
++setPhoneNumber(phoneNumber:Long)
++setAFM(AFM:String)
++setUsername(username:String)
++setPassword(password:String)
++setDeparment(department:String)
+
++toString(): String
++verify(usern:String, passw:String): Boolean
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>478</x><y>914</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-agreement</panel_attributes><additional_attributes>10;16;132;16</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>1260</y><w>110</w><h>40</h></coordinates><panel_attributes>Manager
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>980</x><y>1250</y><w>440</w><h>50</h></coordinates><panel_attributes>Employee
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>1187</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>65;10;15;73</additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>1187</y><w>100</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>15;10;85;63</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>0</y><w>260</w><h>210</h></coordinates><panel_attributes>Department
+--
+-id: Long
+-name: String
+--
++getId(): Long {query}
++getName(): String {query}
++getWorkers(): ArrayList&lt;Worker&gt; {query}
++setId(id:Long)
++setName(dep_name:String)
++addWorker(wkr:Worker)
++removeWorker(wkr:Worker)
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>323</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-agreementTypeList</panel_attributes><additional_attributes>10;90;10;17</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>133</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-departmentList</panel_attributes><additional_attributes>190;20;10;17</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>303</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-workerList</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>353</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-calendar</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1182</x><y>1010</y><w>120</w><h>260</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-leaveRequests</panel_attributes><additional_attributes>20;10;18;240</additional_attributes></element><element><id>Relation</id><coordinates><x>1312</x><y>1010</y><w>130</w><h>260</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-AcceptedLeaves</panel_attributes><additional_attributes>20;10;18;240</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>193</y><w>70</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+-workers</panel_attributes><additional_attributes>10;100;10;17</additional_attributes></element></diagram>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_leave_request_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/leave_request"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_type_label"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="152dp"
+        android:text="@string/leave_type"
+        app:layout_constraintEnd_toEndOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toBottomOf="@+id/title_leave_request_info" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_from_label"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/from"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_leave_type_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_leave_type_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_leave_type_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_type"
+        android:layout_width="210dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_leave_type_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_leave_type_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_leave_type_label"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_from"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_leave_from_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_leave_from_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_leave_from_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/to"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_leave_from"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_leave_type" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_to"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_leave_to_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_leave_to_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_leave_to_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_id"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/handleLeave_leave_worker_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/worker"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/title_leave_request_info"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_leave_from_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_name"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_leave_worker_label"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_leave_worker_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_leave_worker_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_afm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/afm"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_leave_worker_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_name" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_afm"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_worker_afm_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_worker_afm_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_worker_afm_label"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email_address"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_worker_afm_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_worker_afm_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_afm_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_email"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_worker_email_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_worker_email_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_worker_email_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone_number"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_worker_email_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_worker_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_email_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_phone"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_worker_phone_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_worker_phone_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_worker_phone_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_rest_taken_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/rest_days_already_taken"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_worker_phone_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_worker_phone_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_phone_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_rest_taken"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_worker_rest_taken_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_worker_rest_taken_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_worker_rest_taken_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_sick_taken_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sick_days_already_taken"
+        app:layout_constraintEnd_toEndOf="@+id/handleLeave_worker_rest_taken_label"
+        app:layout_constraintStart_toStartOf="@+id/handleLeave_worker_rest_taken_label"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_rest_taken_label" />
+
+    <TextView
+        android:id="@+id/handleLeave_worker_sick_taken"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/handleLeave_worker_sick_taken_label"
+        app:layout_constraintStart_toEndOf="@+id/handleLeave_worker_sick_taken_label"
+        app:layout_constraintTop_toTopOf="@+id/handleLeave_worker_sick_taken_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_approve_leave"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/approve"
+        app:layout_constraintStart_toStartOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_sick_taken_label" />
+
+    <Button
+        android:id="@+id/button_refuse_leave"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="124dp"
+        android:text="@string/refuse"
+        app:layout_constraintEnd_toEndOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toBottomOf="@+id/handleLeave_worker_sick_taken_label" />
+
+    <Button
+        android:id="@+id/button_cancel_handle_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="@+id/title_leave_request_info"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/title_leave_request_info"
+        app:layout_constraintTop_toBottomOf="@+id/button_refuse_leave" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

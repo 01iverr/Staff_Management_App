@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/create_worker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/create_worker"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_add_worker_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/first_name"
+
+        app:layout_constraintEnd_toEndOf="@+id/create_worker_title"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_add_worker_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/last_name"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toEndOf="@+id/view_add_worker_first_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_add_worker_email"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/email_address"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_first_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/editFName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/view_add_worker_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/phone_number"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_last_name"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/editLName" />
+
+    <Button
+        android:id="@+id/button_create_worker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_add_agreement"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/button_add_agreement"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_agreement"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/view_add_worker_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/department"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_phone"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_email"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <Button
+        android:id="@+id/button_add_agreement"
+        android:layout_width="211dp"
+        android:layout_height="53dp"
+        android:text="@string/add_agreement"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_department"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_department"
+        app:layout_constraintTop_toBottomOf="@+id/switch_manager_employee"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/editFName"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="First Name"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_first_name"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/view_add_worker_first_name"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editLName"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="Last Name"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_last_name"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/view_add_worker_last_name"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="email"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_email"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_email"
+        app:layout_constraintTop_toBottomOf="@+id/view_add_worker_email"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="phone"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_phone"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_phone"
+        app:layout_constraintTop_toBottomOf="@+id/view_add_worker_phone"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editDepartmentName"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/department"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/design_default_color_secondary"
+        android:textColorHint="@color/design_default_color_secondary_variant"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_worker_department"
+        app:layout_constraintStart_toStartOf="@+id/view_add_worker_department"
+        app:layout_constraintTop_toBottomOf="@+id/view_add_worker_department"
+        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonCWCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_add_agreement"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/button_add_agreement"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_agreement"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Switch
+        android:id="@+id/switch_manager_employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/manager"
+        android:textColor="@color/gray_100"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/view_add_worker_department"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/editDepartmentName"
+        app:layout_constraintTop_toBottomOf="@+id/editDepartmentName"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/switch_manager_employee_TextON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/employee"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editDepartmentName"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toEndOf="@+id/view_add_worker_department"
+        app:layout_constraintTop_toBottomOf="@+id/editDepartmentName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

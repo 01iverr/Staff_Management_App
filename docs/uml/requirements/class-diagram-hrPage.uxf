@@ -1,0 +1,47 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>90</y><w>370</w><h>300</h></coordinates><panel_attributes>HrPageActivity
+--
+-ced_worker: Button
+-calcPayments: Button
+-back: Button
+-month: EditText
+-year: EditText
+--
++getMonth(): String {query}
++getYear(): String {query}
+
++setMonth(value: String)
++setYear(value: String)
+-setValues(presenter: HrPagePresenter)
+
++onCreate(savedInstanceState: Bundle)
++successfullyFinishedTask(title: String, message: String)
++successfullyFinishedActivitty(message: String)
++showErrorMessage(title: String, message: String)
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>90</y><w>400</w><h>90</h></coordinates><panel_attributes>HrPagePresenter
+--
+
+--
++calcPayments(): Boolean
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>120</y><w>300</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+~presenter
+m1=1</panel_attributes><additional_attributes>280;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>300</y><w>380</w><h>170</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+HrPageView
+--
++getMonth(): String {query}
++getYear(): String {query}
++setMonth(value: String)
++setYear(value: String)
++successfullyFinishedTask(title: String, message: String)
++successfullyFinishedActivitty(message: String)
++showErrorMessage(title: String, message: String)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>190</y><w>160</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>97</x><y>450</y><w>180</w><h>40</h></coordinates><panel_attributes>&lt;&lt;layout&gt;&gt;
+activity_hr_page.xml</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>177</x><y>380</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;inflates&gt;&gt;</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>170</y><w>170</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+-view
+m1=1</panel_attributes><additional_attributes>10;130;150;10</additional_attributes></element></diagram>
