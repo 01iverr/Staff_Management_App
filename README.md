@@ -57,7 +57,7 @@ Each part was meant to emulate a different part of the creation of such a projec
 ![class diagram for AddWorker](/docs/markdown/uml/requirements/class-diagram-addWorker.png "Class diagram for AddWorker")
 
     Sequence for AddWorker:
-![sequence diagram for AddWorker](/docs/markdown/uml/requirements/sequence-addWorker.png "Sequence diagram for AddWorker")
+![sequence diagram for AddWorker](/docs/markdown/uml/requirements/sequence-AddWorker.png "Sequence diagram for AddWorker")
 
 
     Class Diagram for EditWorker:
@@ -85,7 +85,7 @@ Each part was meant to emulate a different part of the creation of such a projec
 ![class diagram for hrPage](/docs/markdown/uml/requirements/class-diagram-hrPage.png "Class diagram for hrPage")
 
     Sequence for hrPage:
-![sequence diagram for hrPage](docs/markdown/uml/requirements/sequence-hrPage.png "Sequence diagram for hrPage")
+![sequence diagram for hrPage](docs/markdown/uml/requirements/sequence-HrPage.png "Sequence diagram for hrPage")
 
 
     Class Diagram for LeaveRequest:
